@@ -1,0 +1,14 @@
+<h1>Create New Poptart</h1>
+<%= form_for Poptart.new do |form| %>
+  Name:
+  <%= form.text_field :name %>
+  <%= form.submit :Create %>
+<% end %>
+
+<h2>Poptarts in Space</h2>
+<ul>
+  <% @poptarts.each do |poptart| %>
+    <li><%= poptart.name %></li>
+  <% end %>
+</ul>
+
