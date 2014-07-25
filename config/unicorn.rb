@@ -6,7 +6,7 @@ working_directory "."
 pid "./pids/unicorn.pid"
 
 # Path to logs
-stderr_path "/log/rails-example/unicorn_error.log"
+stderr_path "/log/rails-example/unicorn.log"
 stdout_path "/log/rails-example/unicorn.log"
 
 # Number of processes

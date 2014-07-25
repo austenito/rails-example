@@ -44,6 +44,7 @@ RailsExample::Application.configure do
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
+  config.logger = Logger.new('/log/rails-example/production.log', 10, 100_000_000)
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
